@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Rebeca Oliveira Ferreira">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Barra de navegação responsiva</title>
+</head>
+<body class="vh-100 overflow-hidden">
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container">
+        <!--logo-->
+          <a class="navbar-brand fs-4" href="#">Trilhando </a>
+          <!--Togle Btn-->
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--Barra lateral-->
+          <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <!--cabeçalho da lateral-->
+            <div class="offcanvas-header text-white border-bottom">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Trilhando</h5>
+              <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <!--Corpo da Barra lateral-->
+            <div class="offcanvas-body d-flex flex-column p-4 p-lg-0">
+              <ul class="navbar-nav justify-content-center align-itens-center fs-5 flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#trilhas">Trilhas</a>
+                </li>
+                <li class="nav-item mx-2">
+                 <a class="nav-link" href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item mx-2">
+                 <a class="nav-link" href="#contatos">Contatos</a>
+                </li>
+              </ul>
+                </li>
+              </ul>
+              <!-- Login / Sign Up-->
+              <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                <a href="#login" class="text-white">Login</a>
+                <a href="#signup" class="text-white text-decoration-none px-3 py-1 bg-primary rounded-4" style="background-color: #f94ca4;">Sign Up</a>
+              </div>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Trilhas em São Paulo..." aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Busca</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <section class="w-100 vh-100 d-flex flex-column justify-content-center align-items-center text-white fs-1">
+          <h1 style="font-size: 1.5em;" > Trilhando</h1>
+          <h2 style="font-size: 1.3em;">Descobrindo a beleza <br>do Brasil  pelas trilhas</h2>
+        </section>
+      </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
